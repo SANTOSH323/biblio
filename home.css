@@ -1,0 +1,544 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.navigation-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    height: 100px;
+    gap: 50%;
+    /* background-color: #F8EDE3; */
+    position: sticky;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    top: 0px;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/025/373/909/non_2x/an-open-book-sitting-on-top-of-a-table-created-with-generative-ai-technology-free-photo.jpg');
+    opacity: 0.7;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-logo img {
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+    background-position: top;
+}
+
+
+.navbar {
+    display: flex;
+    gap: 80px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-size: 25px;
+    /* color: #EEF5FF; */
+    color: darkblue;
+    font-family: "ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+/*trendingbooks */
+
+.trendingbox-logo h2 {
+    text-decoration: underline solid rgb(141, 154, 220);
+    text-underline-offset: 10px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+    text-align: center;
+    /* padding-top: 30px; */
+    padding: 30px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    height: 250px;
+    object-fit: cover;
+}
+
+.trender {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 10px;
+    border: none;
+}
+
+#book-spelling {
+    font-family: "Goldman", sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    font-size: 18px;
+    font-style: normal;
+    color: black;
+}
+
+#discount {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    padding: 5px;
+    /* word-spacing: 10px; */
+}
+
+.blocks {
+    display: none;
+}
+
+#add-to-cart {
+    padding: 5px 10px;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: orange;
+    color: black;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#price {
+    display: flex;
+    flex-direction: row;
+    /* padding: 5px; */
+}
+
+
+/* about */
+.about {
+    /* margin-top: 50px; */
+    /* background-color: #C9CCD5; */
+    padding: 30px;
+    color: darkblue;
+}
+
+.about-logo h2 {
+    text-decoration: underline solid rgb(141, 154, 220);
+    text-underline-offset: 10px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 30px;
+    padding: 30px;
+}
+
+.aboutbox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-paragraph {
+    width: 55%;
+}
+
+.categorybox img {
+    height: 350px;
+    width: 250px;
+}
+
+/* partners */
+
+.partner-logo {
+    text-decoration: underline solid rgb(141, 154, 220);
+    text-underline-offset: 10px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.partnerbox {
+    display: flex;
+    object-fit: cover;
+    justify-content: space-around;
+}
+
+.partnerbox img {
+    object-fit: contain;
+    height: 150px;
+}
+
+#bar-icon {
+    /* padding: 30px; */
+    float: left;
+    font-size: 25px;
+    display: inline;
+    color: black;
+    display: none;
+}
+
+/* footer */
+
+
+#footer {
+    height: 300px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #164863;
+}
+
+#footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    color: white;
+}
+
+#i0 {
+    padding: 20px 10px;
+    font-size: 33px;
+}
+
+#i0:hover {
+    transform: translate(-5px, -10px);
+}
+
+#h-7 {
+    padding: 10px 10px;
+    font-size: 22px;
+
+}
+
+.container>div>ul {
+    list-style: none;
+}
+
+.container>div>ul>li {
+    cursor: pointer;
+    margin: 16px 0px;
+}
+
+.container>div>ul>li>a {
+    font-size: 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+    position: relative;
+    left: 0px;
+    color: white;
+}
+
+
+.container>div>ul>li>a:hover {
+    bottom: 8px;
+}
+
+#i0 {
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        /* overflow-x: none; */
+    }
+
+    .navigation-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50%;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-image: url('https://static.vecteezy.com/system/resources/previews/025/373/909/non_2x/an-open-book-sitting-on-top-of-a-table-created-with-generative-ai-technology-free-photo.jpg');
+        opacity: 0.7;
+        position: sticky;
+        top: 0px;
+        z-index: 100;
+
+    }
+
+    .navbar-logo img {
+        height: 80px;
+        background-size: cover;
+        background-position: top;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    #bar-icon {
+        display: flex;
+        justify-content: center;
+    }
+
+    .blocks {
+        margin-top: 0px;
+        background-color: rgba(61, 60, 62, 0.849);
+        border: 2px solid black;
+        height: 30%;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+    }
+
+
+    .blocks a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 35px;
+        margin-top: 50px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .about {
+        /* margin-top: 50px; */
+        /* background-color: #C9CCD5; */
+        padding: 100px;
+        color: darkblue;
+    }
+
+    .about-logo h2 {
+        text-decoration: underline solid rgb(141, 154, 220);
+        text-underline-offset: 10px;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 35px;
+        text-align: center;
+        padding-top: 30px;
+        padding: 30px;
+    }
+
+    .aboutbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .about-paragraph {
+        width: 99%;
+    }
+
+
+
+    .trendingbox-logo h2 {
+        text-decoration: underline solid rgb(141, 154, 220);
+        text-underline-offset: 10px;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 35px;
+        text-align: center;
+        /* padding-top: 30px; */
+        padding: 30px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+    }
+
+    .swiper-slide img {
+        display: block;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .trender {
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        padding: 10px;
+        border: none;
+    }
+
+    #book-spelling {
+        font-family: "Goldman", sans-serif;
+        font-weight: 400;
+        padding: 10px;
+        font-size: 18px;
+        font-style: normal;
+        color: black;
+    }
+
+    #discount {
+        display: flex;
+        flex-direction: row;
+        color: black;
+        padding: 5px;
+        width: 100%;
+        font-size: 10px;
+        /* word-spacing: 10px; */
+    }
+
+    
+
+    #add-to-cart {
+        display: flex;
+        width: 100px;
+        padding: 5px 10px;
+        font-size: 17px;
+        border-radius: 10px;
+        background-color: orange;
+        color: black;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #price {
+        display: flex;
+        flex-direction: row;
+        /* padding: 5px; */
+    }
+
+    .categorybox img {
+        height: 350px;
+        width: 250px;
+    }
+
+    /* partners */
+
+    .partner-logo {
+        text-decoration: underline solid rgb(141, 154, 220);
+        text-underline-offset: 10px;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 25px;
+        padding: 30px;
+        margin-top: 50px;
+    }
+
+    .partnerbox {
+        display: flex;
+        flex-direction: column;
+        object-fit: cover;
+        justify-content: space-around;
+    }
+
+    .partnerbox img {
+        object-fit: contain;
+        height: 100px;
+    }
+
+    
+    /* footer */
+
+
+    #footer {
+        height: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        background-color: #164863;
+    }
+
+    #footer .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+        margin-top: 30px;
+        padding: 30px;
+        color: white;
+    }
+
+    #i0 {
+        padding: 10px 10px;
+        font-size: 19px;
+    }
+
+    
+    #h-7 {
+        padding: 10px 10px;
+        font-size: 18px;
+
+    }
+
+    .container>div>ul {
+        list-style: none;
+    }
+
+    .container>div>ul>li {
+        cursor: pointer;
+        margin: 16px 0px;
+    }
+
+    .container>div>ul>li>a {
+        font-size: 20px;
+        text-decoration: none;
+        font-family: sans-serif;
+        position: relative;
+        left: 0px;
+        color: white;
+    }
+
+
+    .container>div>ul>li>a:hover {
+        bottom: 8px;
+    }
+
+    #i0 {
+        color: white;
+    }
+
+}
