@@ -218,28 +218,60 @@
 
 .footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #dfe4ea;
-    color: black;
-    text-decoration: none;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #27374D;
+    gap: 15%;
     padding: 30px;
+    color: white;
 }
 
 #footer-head {
-    color: black;
+    width: 22%;
     padding: 30px;
 }
+
+#footer-head h2 {
+    color: orange;
+    font-size: 25px;
+    padding: 5px;
+}
+
 
 #footer-head p {
-    width: 55%;
+    color: white;
+    font-size: 20px;
+    width: 300px;
+}
+
+.nai {
+    padding: 30px;
+}
+
+.nai li {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+
+.nai i {
+    font-size: 20px;
+}
+
+.nai li a {
+    text-decoration: none;
+    color: white;
 }
 
 
-.nai li a {
+.footer-wid {
     padding: 30px;
-    color: black;
-    list-style: none;
+}
+
+.footer-wid address {
+    width: 50%;
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -265,7 +297,7 @@
     }
 
     #biblio {
-        color: #164863;
+        color: white;
     }
 
     .navbar-logo img {
@@ -314,7 +346,7 @@
     .about {
         /* margin-top: 50px; */
         /* background-color: #C9CCD5; */
-        padding: 50px;
+        padding: 30px;
         color: darkblue;
     }
 
@@ -327,7 +359,7 @@
         font-style: normal;
         font-size: 35px;
         text-align: center;
-        padding-top: 30px;
+        /* padding-top: 30px; */
         padding: 30px;
     }
 
@@ -408,7 +440,7 @@
         align-items: start;
         color: black;
         padding: 5px;
-        width: 220%;
+        width: 280%;
         font-size: 15px;
         text-align: start;
     }
@@ -474,40 +506,59 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        background-color: #dfe4ea;
-        color: black;
-        text-decoration: none;
-        /* padding: 30px; */
+        align-items: start;
+        background-color: #27374D;
+        gap: 15%;
+        padding: 30px;
+        color: white;
     }
 
     #footer-head {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: black;
+        width: 22%;
         padding: 30px;
     }
+
+    #footer-head h2 {
+        color: orange;
+        font-size: 25px;
+        padding: 5px;
+    }
+
 
     #footer-head p {
-        width: 88%;
-        padding: 10px;
+        color: white;
+        font-size: 20px;
+        width: 300px;
     }
 
+    .nai {
+        padding: 30px;
+    }
+
+    .nai li {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .nai i {
+        font-size: 20px;
+    }
 
     .nai li a {
-        padding: 30px;
-        color: black;
-        list-style: none;
+        text-decoration: none;
+        color: white;
     }
 
+
     .footer-wid {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
         padding: 30px;
+    }
+
+    .footer-wid address {
+        width: 50%;
+        font-size: 20px;
     }
 
 

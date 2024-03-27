@@ -185,23 +185,18 @@
         display: none;
     }
 
-    .filterDiv {
-        /* float: right; */
-        color: black;
-        text-align: center;
-        display: none;
-        /* overflow: hidden; */
-    }
+    /* .filterDiv {
+        display: flex;
+        align-items: center;
+        
 
+    }  */
+    
     .filterbox {
         display: grid;
-        grid-template-columns: 180px 180px;
-        justify-content: space-evenly;
-        grid-gap: 7px;
-        margin: 100px;
-        position: relative;
-        z-index: 1;
-        padding: 10px;
+        justify-content: space-around;
+        margin-top: 100px;
+        grid-template-columns:auto auto;
     }
 
     .box {
@@ -209,13 +204,14 @@
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        padding: 15px;
         border: 1px solid black;
         border-radius: 15px;
-        height: 280px;
-        width: 180px;
+        height: 300px;
+        margin: 10px;
+        width: 145px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         background-color: #EEEEEE;
+        
     }
 
     .box img {
@@ -337,9 +333,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index: 10;
         gap: 10px;
-        /* height: 80%; */
         position: fixed;
         display: none;
 
@@ -347,11 +341,10 @@
 
     .navbar {
         margin-top: 0px;
+        width: 100%;
+        z-index: 100;
         position: fixed;
         height: 100px;
-        width: 100%;
-        /* top: 0px; */
-        z-index: 100;
         background-color: white;
     }
 }
