@@ -29,6 +29,11 @@
     background-position: top;
 }
 
+#biblio {
+    color: white;
+}
+
+
 
 .navbar {
     display: flex;
@@ -160,7 +165,8 @@
 
 .aboutbox {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    gap: 30px;
 }
 
 .about-paragraph {
@@ -209,62 +215,31 @@
 /* footer */
 
 
-#footer {
-    height: 300px;
-    margin-top: 30px;
+
+.footer {
     display: flex;
-    flex-direction: column;
-    background-color: #164863;
-}
-
-#footer .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 30px;
-    color: white;
-}
-
-#i0 {
-    padding: 20px 10px;
-    font-size: 33px;
-}
-
-#i0:hover {
-    transform: translate(-5px, -10px);
-}
-
-#h-7 {
-    padding: 10px 10px;
-    font-size: 22px;
-
-}
-
-.container>div>ul {
-    list-style: none;
-}
-
-.container>div>ul>li {
-    cursor: pointer;
-    margin: 16px 0px;
-}
-
-.container>div>ul>li>a {
-    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dfe4ea;
+    color: black;
     text-decoration: none;
-    font-family: sans-serif;
-    position: relative;
-    left: 0px;
-    color: white;
+    padding: 30px;
+}
+
+#footer-head {
+    color: black;
+    padding: 30px;
+}
+
+#footer-head p {
+    width: 55%;
 }
 
 
-.container>div>ul>li>a:hover {
-    bottom: 8px;
-}
-
-#i0 {
-    color: white;
+.nai li a {
+    padding: 30px;
+    color: black;
+    list-style: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -289,10 +264,15 @@
 
     }
 
+    #biblio {
+        color: #164863;
+    }
+
     .navbar-logo img {
-        height: 80px;
-        background-size: cover;
-        background-position: top;
+        /* height: 80px; */
+        /* background-size: cover; */
+        /* background-position: top; */
+        border-radius: 50%;
     }
 
     .navbar {
@@ -312,6 +292,7 @@
         width: 100%;
         position: fixed;
         z-index: 10;
+        /* display: none; */
     }
 
 
@@ -333,7 +314,7 @@
     .about {
         /* margin-top: 50px; */
         /* background-color: #C9CCD5; */
-        padding: 100px;
+        padding: 50px;
         color: darkblue;
     }
 
@@ -359,6 +340,7 @@
 
     .about-paragraph {
         width: 99%;
+        padding: 10px;
     }
 
 
@@ -388,7 +370,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 50px;
+        margin: 80px;
     }
 
     .swiper-slide img {
@@ -414,26 +396,33 @@
         padding: 10px;
         font-size: 18px;
         font-style: normal;
+        text-align: center;
         color: black;
+        width: 250%;
     }
 
     #discount {
         display: flex;
         flex-direction: row;
+        justify-content: start;
+        align-items: start;
         color: black;
         padding: 5px;
-        width: 100%;
-        font-size: 10px;
-        /* word-spacing: 10px; */
+        width: 220%;
+        font-size: 15px;
+        text-align: start;
     }
 
-    
+
 
     #add-to-cart {
         display: flex;
         width: 100px;
-        padding: 5px 10px;
-        font-size: 17px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        font-size: 14px;
         border-radius: 10px;
         background-color: orange;
         color: black;
@@ -479,66 +468,47 @@
         height: 100px;
     }
 
-    
+
     /* footer */
-
-
-    #footer {
-        height: 100%;
-        margin-top: 30px;
+    .footer {
         display: flex;
         flex-direction: column;
-        padding: 30px;
-        background-color: #164863;
+        justify-content: center;
+        align-items: center;
+        background-color: #dfe4ea;
+        color: black;
+        text-decoration: none;
+        /* padding: 30px; */
     }
 
-    #footer .container {
+    #footer-head {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: start;
-        margin-top: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: black;
         padding: 30px;
-        color: white;
     }
 
-    #i0 {
-        padding: 10px 10px;
-        font-size: 19px;
+    #footer-head p {
+        width: 88%;
+        padding: 10px;
     }
 
-    
-    #h-7 {
-        padding: 10px 10px;
-        font-size: 18px;
 
-    }
-
-    .container>div>ul {
+    .nai li a {
+        padding: 30px;
+        color: black;
         list-style: none;
     }
 
-    .container>div>ul>li {
-        cursor: pointer;
-        margin: 16px 0px;
+    .footer-wid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 30px;
     }
 
-    .container>div>ul>li>a {
-        font-size: 20px;
-        text-decoration: none;
-        font-family: sans-serif;
-        position: relative;
-        left: 0px;
-        color: white;
-    }
-
-
-    .container>div>ul>li>a:hover {
-        bottom: 8px;
-    }
-
-    #i0 {
-        color: white;
-    }
 
 }
