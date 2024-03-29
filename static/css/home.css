@@ -1,0 +1,585 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.navigation-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    height: 100px;
+    gap: 50%;
+    /* background-color: #F8EDE3; */
+    position: sticky;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    top: 0px;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/025/373/909/non_2x/an-open-book-sitting-on-top-of-a-table-created-with-generative-ai-technology-free-photo.jpg');
+    opacity: 0.7;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-logo img {
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+    background-position: top;
+}
+
+#biblio {
+    color: white;
+}
+
+
+
+.navbar {
+    display: flex;
+    gap: 80px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-size: 25px;
+    /* color: #EEF5FF; */
+    color: darkblue;
+    font-family: "ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+/*trendingbooks */
+
+.trendingbox-logo h2 {
+    text-decoration: underline solid rgb(141, 154, 220);
+    text-underline-offset: 10px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+    text-align: center;
+    /* padding-top: 30px; */
+    padding: 30px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    height: 250px;
+    object-fit: cover;
+}
+
+.trender {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 10px;
+    border: none;
+}
+
+#book-spelling {
+    font-family: "Goldman", sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    font-size: 18px;
+    font-style: normal;
+    color: black;
+}
+
+#discount {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    padding: 5px;
+    /* word-spacing: 10px; */
+}
+
+.blocks {
+    display: none;
+}
+
+#add-to-cart {
+    padding: 5px 10px;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: orange;
+    color: black;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#price {
+    display: flex;
+    flex-direction: row;
+    /* padding: 5px; */
+}
+
+
+/* about */
+.about {
+    /* margin-top: 50px; */
+    /* background-color: #C9CCD5; */
+    padding: 30px;
+    color: darkblue;
+}
+
+.about-logo h2 {
+    text-decoration: underline solid rgb(141, 154, 220);
+    text-underline-offset: 10px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 30px;
+    padding: 30px;
+}
+
+.aboutbox {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.about-paragraph {
+    width: 55%;
+}
+
+.categorybox img {
+    height: 350px;
+    width: 250px;
+}
+
+/* partners */
+
+.partner-logo {
+    text-decoration: underline solid rgb(141, 154, 220);
+    text-underline-offset: 10px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.partnerbox {
+    display: flex;
+    object-fit: cover;
+    justify-content: space-around;
+}
+
+.partnerbox img {
+    object-fit: contain;
+    height: 150px;
+}
+
+#bar-icon {
+    float: left;
+    font-size: 25px;
+    display: inline;
+    color: black;
+    display: none;
+}
+
+#user {
+    /* padding: 30px; */
+    color: black;
+    font-size: 25px;
+}
+
+#trolly {
+    /* padding: 30px; */
+    color: black;
+    font-size: 25px;
+}
+/* footer */
+
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #27374D;
+    gap: 15%;
+    padding: 30px;
+    color: white;
+}
+
+#footer-head {
+    width: 22%;
+    padding: 30px;
+}
+
+#footer-head h2 {
+    color: orange;
+    font-size: 25px;
+    padding: 5px;
+}
+
+
+#footer-head p {
+    color: white;
+    font-size: 20px;
+    width: 300px;
+}
+
+.nai {
+    padding: 30px;
+}
+
+.nai li {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+
+.nai i {
+    font-size: 20px;
+}
+
+.nai li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.footer-wid {
+    padding: 30px;
+}
+
+.footer-wid address {
+    width: 50%;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        /* overflow-x: none; */
+    }
+
+    .navigation-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50%;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-image: url('https://static.vecteezy.com/system/resources/previews/025/373/909/non_2x/an-open-book-sitting-on-top-of-a-table-created-with-generative-ai-technology-free-photo.jpg');
+        opacity: 0.7;
+        position: sticky;
+        top: 0px;
+        z-index: 100;
+
+    }
+
+    #biblio {
+        color: white;
+    }
+
+    .navbar-logo img {
+        /* height: 80px; */
+        /* background-size: cover; */
+        /* background-position: top; */
+        border-radius: 50%;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    #bar-icon {
+        display: flex;
+        justify-content: center;
+    }
+
+    #user {
+        color: white;
+    }
+
+    #trolly {
+        color: white;
+    }
+
+    .blocks {
+        margin-top: 0px;
+        background-color: rgba(61, 60, 62, 0.849);
+        border: 2px solid black;
+        height: 50%;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+        /* display: none; */
+    }
+
+
+    .blocks a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 35px;
+        margin-top: 50px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .about {
+        /* margin-top: 50px; */
+        /* background-color: #C9CCD5; */
+        padding: 30px;
+        color: darkblue;
+    }
+
+    .about-logo h2 {
+        text-decoration: underline solid rgb(141, 154, 220);
+        text-underline-offset: 10px;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 35px;
+        text-align: center;
+        /* padding-top: 30px; */
+        padding: 30px;
+    }
+
+    .aboutbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .about-paragraph {
+        width: 99%;
+        padding: 10px;
+    }
+
+
+
+    .trendingbox-logo h2 {
+        text-decoration: underline solid rgb(141, 154, 220);
+        text-underline-offset: 10px;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 35px;
+        text-align: center;
+        /* padding-top: 30px; */
+        padding: 30px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px;
+    }
+
+    .swiper-slide img {
+        display: block;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .trender {
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        padding: 10px;
+        border: none;
+    }
+
+    #book-spelling {
+        font-family: "Goldman", sans-serif;
+        font-weight: 400;
+        padding: 10px;
+        font-size: 18px;
+        font-style: normal;
+        text-align: center;
+        color: black;
+        width: 250%;
+    }
+
+    #discount {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        color: black;
+        padding: 5px;
+        width: 280%;
+        font-size: 15px;
+        text-align: start;
+    }
+
+
+
+    #add-to-cart {
+        display: flex;
+        width: 100px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 10px;
+        background-color: orange;
+        color: black;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #price {
+        display: flex;
+        flex-direction: row;
+        /* padding: 5px; */
+    }
+
+    .categorybox img {
+        height: 350px;
+        width: 250px;
+    }
+
+    /* partners */
+
+    .partner-logo {
+        text-decoration: underline solid rgb(141, 154, 220);
+        text-underline-offset: 10px;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 25px;
+        padding: 30px;
+        margin-top: 50px;
+    }
+
+    .partnerbox {
+        display: flex;
+        flex-direction: column;
+        object-fit: cover;
+        justify-content: space-around;
+    }
+
+    .partnerbox img {
+        object-fit: contain;
+        height: 100px;
+    }
+
+
+    /* footer */
+    .footer {
+        /* margin-top: 30px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        background-color: #27374D;
+        gap: 15%;
+        padding: 30px;
+        /* height: 600px; */
+        color: white;
+    }
+
+    #footer-head {
+        width: 22%;
+        padding: 30px;
+    }
+
+    #footer-head h2 {
+        color: orange;
+        font-size: 25px;
+        padding: 5px;
+    }
+
+
+    #footer-head p {
+        color: white;
+        font-size: 20px;
+        width: 300px;
+    }
+
+    .nai {
+        padding: 30px;
+    }
+
+    .nai li {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .nai i {
+        font-size: 20px;
+    }
+
+    .nai li a {
+        text-decoration: none;
+        color: white;
+    }
+
+
+    .footer-wid {
+        padding: 30px;
+    }
+
+    .footer-wid address {
+        width: 50%;
+        font-size: 20px;
+    }
+
+
+}

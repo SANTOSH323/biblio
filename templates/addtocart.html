@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    /* Internal CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa; /* Light gray background */
+    }
+    
+    .container {
+      background-color: #fff; /* White background for form */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-control:hover {
+      border-color: #007bff; /* Blue border color on hover */
+    }
+    
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+    
+    /* Custom styling for payment mode select */
+    #paymentMode {
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+
+  <body>
+    <div class="container mt-5">
+      <h2 class="text-center">Delivery Information</h2>
+      <form action="/info" method="post">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Name -->
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" class="form-control" name="name" placeholder="Enter your full name" required />
+            </div>
+            <!-- Address -->
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" class="form-control" name="address" placeholder="Enter your address" required />
+            </div>
+            <!-- City -->
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" class="form-control" name="city" placeholder="Enter your city" required />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Postal Code -->
+            <div class="form-group">
+              <label for="postalCode">Postal Code</label>
+              <input type="text" class="form-control" name="postalCode" placeholder="Enter your postal code" required />
+            </div>
+            <!-- Country -->
+            <div class="form-group">
+              <label for="country">Country</label>
+              <input type="text" class="form-control" name="country" placeholder="Enter your country" required />
+            </div>
+            <!-- Phone Number -->
+            <div class="form-group">
+              <label for="phoneNumber">Phone Number</label>
+              <input type="tel" class="form-control" name="phoneNumber" placeholder="Enter your phone number" required />
+            </div>
+          </div>
+        </div>
+        <!-- Delivery Instructions -->
+        <div class="form-group">
+          <label for="deliveryInstructions">Delivery Instructions (Optional)</label>
+          <textarea class="form-control" name="deliveryInstructions" rows="3" placeholder="Any specific delivery instructions"></textarea>
+        </div>
+        <!-- Payment Mode -->
+        <div class="form-group">
+          <label for="paymentMode">Payment Mode</label>
+          <select class="form-control" name="paymentMode" required>
+            <option value="">Select Payment Mode</option>
+            <option value="credit">Credit Card</option>
+            <option value="debit">Debit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="cod">Cash on Delivery</option>
+          </select>
+        </div>
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+      </form>
+    </div>
+
+    <!-- Bootstrap JS and jQuery (if required) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+{% endblock %}
